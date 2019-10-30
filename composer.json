@@ -1,0 +1,11 @@
+{
+"autoload": {
+        "psr-4": {
+            "Appointment\\": "src/"
+        }
+    },
+        "require": {
+                "phpauth/phpauth": "dev-master",
+                "twig/twig": "^2.0"
+        }
+}

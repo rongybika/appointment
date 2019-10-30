@@ -1,0 +1,56 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Add appointment{% endblock %}
+
+{% block head %}
+{{ parent() }}
+{% endblock %}
+
+{% block content %}
+<span id="message" style="color:rgb(0, 38, 255)">{{message}}</span>
+Appointment Home content block
+<div class="modal">
+    <!-- Place at bottom of page -->
+</div>
+<div class="outer">
+    <div class="inner">
+        <div>
+            Select one from the given options:
+            <select style="width:200px;" id="select-provider">
+                <option value="" selected="selected">Select Provider</option>
+                <!--<option value="free">Free</option> -->
+                <!--<option value="basic">Basic</option>-->
+            </select>
+        </div>
+
+        <input type="hidden" id="csrf" name="csrf" value="{{ csrf }}">
+
+        <div>
+            Select one from the given options:
+            <select style="width:200px;" id="select-service">
+                <option value="" selected="selected">Select Service</option>
+                <!--<option value="free">Free</option> -->
+                <!--<option value="basic">Basic</option>-->
+            </select>
+        </div>
+    </div>
+
+    <div class="inner">
+        <input type="text" id="demo" />
+    </div>
+
+    <div class="inner" id="available-hours"></div>
+</div>
+<div>
+    <button id="button" type="button">Add Appointment</button>
+</div>
+
+{% endblock %}
+
+{% block footer %}
+{{ parent() }}
+{% endblock %}
+
+
+{% block javascripts %}
+{% endblock %}

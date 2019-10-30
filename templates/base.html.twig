@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="ext/jquery.datetimepicker.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    {% block head %}
+    <title>{% block title %}{% endblock %} - My Webpage</title>
+    {% endblock %}
+</head>
+
+<body>
+    {{ include('menu.html.twig') }}
+    <div id="content">{% block content %}{% endblock %}</div>
+    <div id="footer">
+        {% block footer %}
+        &copy; Copyright 2019 by <a href="#">ME</a>.
+        {% endblock %}
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="ext/jquery.datetimepicker.js"></script>
+    <script src="ext/jquery.redirect.js"></script>
+    <script src="js/script.js"></script>
+    {% block javascripts %}
+    {% endblock %}
+</body>
+
+</html>

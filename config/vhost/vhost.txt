@@ -1,0 +1,11 @@
+<VirtualHost *:80>
+ DocumentRoot "D:/xampp/htdocs/appointment/public"
+ ServerName appointment.site
+ ServerAlias *.appointment.site
+ Alias /service "D:/xampp/htdocs/appointment/service"
+    <Directory "D:/xampp/htdocs/appointment/service">
+        Order allow,deny
+        Allow from all
+        Require all granted
+    </Directory>
+</VirtualHost>
