@@ -4,7 +4,6 @@ You have to setup the appointment service from service folder.
 
 Please open config folder and create confing.php file with next lines:
 
-<?php
 $host = 'YOUR_HOST';
 $dbname = '';
 $username = '';
